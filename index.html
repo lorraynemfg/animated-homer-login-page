@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <img id="rosca" src="./assets/rosca.png" alt="rosca rosa">
+        <img id="rosca2" src="./assets/rosca2.png" alt="rosca marrom">
+        <img src="./assets/homer.png" alt="Minha Imagem">
+        <div class="buttons centralizado">
+            <button id="btn-login">Fazer Login</button>
+            <button id="btn-cadastro">Fazer Cadastro</button>
+        </div>
+
+
+        <div class="login-container oculto" id="login-form">
+
+            <form>
+                <label id="email-senha-login" for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <label id="email-senha-login" for="password">Senha:</label>
+                <input type="password" id="password" name="password" required />
+                <button type="submit">Entrar</button>
+            </form>
+
+        </div>
+
+        <div class="formulario oculto" id="cadastro">
+            <form id="cadastro-form">
+                <section class="nome-email">
+
+                    <div class="campo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" />
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" />
+                    </div>
+                </section>
+
+                <section class="idade-cidade">
+
+                    <div class="campo">
+                        <label for="idade">Idade:</label>
+                        <input type="number" id="idade" name="idade" />
+                    </div>
+                    <div class="campo">
+                        <label for="cidade">Estados</label>
+                        <select id="cidade">
+                            <option value="">...</option>
+                            <option value="sp">SP</option>
+                            <option value="rj">RJ</option>
+                        </select>
+                    </div>
+                </section>
+
+
+                <section class="senha-checkBox">
+                    <div class="campo">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" />
+                    </div>
+                    <div class="termos">
+                        <input type="checkbox" id="horns" name="horns">
+                        <label #="text" for="horns">Aceito todos os termos.</label>
+                    </div>
+                </section>
+
+
+                <div class="botao">
+                    <button type="submit">Cadastrar</button>
+                </div>
+            </form>
+
+        </div>
+    </main>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="./index.js"></script>
+
+
+</body>
+
+</html>
